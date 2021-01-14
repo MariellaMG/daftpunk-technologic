@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="buttons.css">
+    <style>
+@font-face {
+    font-family: 'ElegantIcons';
+    src: url('ElegantIcons.eot') format('embedded-opentype'),;
+    src: url('ElegantIcons.woff')format('woff');
+}
+
+.glyph{
+    font-family: 'ElegantIcons';
+}
+
+
+html{
+    background-color: black;
+}
+/*a.button4{ display: inline-block; padding:0.3em 1.2em; margin:0 0.1em 0.1em 0; border:0.16em solid rgba(255,255,255,0); border-radius: 2em; box-sizing: border-box; text-decoration:none; font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+text-align:center;
+transition: all 0.2s;
+}
+a.button4:hover{
+border-color: rgba(255,255,255,1);
+}
+@media all and (max-width:30em){
+ a.button4{
+display:block;
+margin:0.2em auto; }
+}*/
+
+button {
+    font-size: 20px;
+    width: 230px;
+    height: 80px;
+    border-radius: 4px;
+    cursor:pointer;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+/* Inner Height Button */
+.inner-height-neon {
+    background-color: transparent;
+    border: 2px solid #84f14e;
+    color: #84f14e;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+ 
+    .inner-height-neon .bg-height {
+        background-color: #6bfff1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        height: 0%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: height .3s, top .3s;
+        transition: height .3s, top .3s;
+    }
+ 
+    .inner-height-neon .btn-text {
+        z-index: 1;
+    }
+ 
+.inner-height-neon:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px #84f14e;
+            box-shadow: 0px 0px 30px 20px #84f14e;
+    border-color: #84f14e;
+}
+ 
+.inner-height-neon:hover .bg-height {
+    height:100%;
+    top:0%;
+    z-index: -1;
+}
+ 
+.inner-height-neon:hover .btn-text {
+    color:#1aa99b
+}
+
+/* Inner Height Button purple */
+.inner-height-neon-purple {
+    background-color: transparent;
+    border: 2px solid #9a4ef1;
+    color: #9a4ef1;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+ 
+    .inner-height-neon-purple .bg-height-purple {
+        background-color: #b381ec;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        height: 0%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: height .3s, top .3s;
+        transition: height .3s, top .3s;
+    }
+ 
+    .inner-height-neon .btn-text {
+        z-index: 1;
+    }
+ 
+.inner-height-neon-purple:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px #9a4ef1;
+            box-shadow: 0px 0px 30px 20px #9a4ef1;
+    border-color: #9a4ef1;
+}
+ 
+.inner-height-neon:hover .bg-height {
+    height:100%;
+    top:0%;
+    z-index: -1;
+}
+ 
+.inner-height-neon:hover .btn-text {
+    color:#1aa99b;
+}
+
+
+/* Inner Height Button Pink */
+.inner-height-neon-pink {
+    background-color: transparent;
+    border: 2px solid #f14ebd;
+    color: #f14ebd;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+ 
+    .inner-height-neon-pink .bg-height-pink {
+        background-color: #f14ebd;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        height: 0%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: height .3s, top .3s;
+        transition: height .3s, top .3s;
+    }
+ 
+    .inner-height-neon .btn-text {
+        z-index: 1;
+    }
+ 
+.inner-height-neon-pink:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px #f14ebd;
+            box-shadow: 0px 0px 30px 20px #f14ebd;
+    border-color: #f14ebd;
+}
+ 
+.inner-height-neon:hover .bg-height {
+    height:100%;
+    top:0%;
+    z-index: -1;
+}
+ 
+.inner-height-neon-pink:hover .btn-text {
+    color:#f14ebd;
+}
+
+/* Inner Height Button Blue */
+.inner-height-neon-blue {
+    background-color: transparent;
+    border: 2px solid #4e9af1;
+    color: #4e9af1;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+ 
+    .inner-height-neon-blue .bg-height-pink {
+        background-color: #4e9af1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        height: 0%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: height .3s, top .3s;
+        transition: height .3s, top .3s;
+    }
+ 
+    .inner-height-neon .btn-text {
+        z-index: 1;
+    }
+ 
+.inner-height-neon-blue:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px #4e9af1;
+            box-shadow: 0px 0px 30px 20px #4e9af1;
+    border-color: #4e9af1;
+}
+ 
+.inner-height-neon:hover .bg-height {
+    height:100%;
+    top:0%;
+    z-index: -1;
+}
+ 
+.inner-height-neon-blue:hover .btn-text {
+    color:#4e9af1;
+}
+
+    </style>
+
+</head>
+<html>
+<body>
+
+  
+<!--<div class="ct-btn">-->
+    <button class="inner-height-neon" onclick="document.getElementById('bflat56').play()"><span class="bg-height"></span><span class="btn-text">Technologic</span></button>
+<!--</div>-->
+<br><br>
+
+<audio id="bflat" src="tech-1.mp3"></audio>
+
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat').play()"><span class="bg-height"></span><span class="btn-text">Buy it</span></button>
+
+<audio id="bflat1" src="tech-2.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat1').play()"><span class="bg-height"></span><span class="btn-text">Use it</span></button>
+<audio id="bflat2" src="tech-3.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat2').play()"><span class="bg-height"></span><span class="btn-text">Break it</span></button>
+<audio id="bflat3" src="tech-4.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat3').play()"><span class="bg-height"></span><span class="btn-text">Fix it</span></button>
+<audio id="bflat4" src="tech-5.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat4').play()"><span class="bg-height"></span><span class="btn-text">Trash it</span></button>
+<audio id="bflat5" src="tech-6.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat5').play()"><span class="bg-height"></span><span class="btn-text">Change it</span></button>
+<audio id="bflat6" src="tech-7.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat6').play()"><span class="bg-height"></span><span class="btn-text">Mail - Upgrade it</span></button>
+<br><br>
+<audio id="bflat7" src="tech-1-1.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat7').play()"><span class="bg-height"></span><span class="btn-text">Charge it</span></button>
+<audio id="bflat8" src="tech-2-2.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat8').play()"><span class="bg-height"></span><span class="btn-text">Poin it</span></button>
+<audio id="bflat9" src="tech-3-3.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat9').play()"><span class="bg-height"></span><span class="btn-text">Zoom it</span></button>
+<audio id="bflat10" src="tech-4-4.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat10').play()"><span class="bg-height"></span><span class="btn-text">Press it</span></button>
+<audio id="bflat11" src="tech-5-5.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat11').play()"><span class="bg-height"></span><span class="btn-text">Snap it</span></button>
+<audio id="bflat12" src="tech-6-6.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat12').play()"><span class="bg-height"></span><span class="btn-text">Work it</span></button>
+<audio id="bflat13" src="tech-7-7.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat13').play()"><span class="bg-height"></span><span class="btn-text">Quick Erase it</span></button>
+<br><br>
+<audio id="bflat14" src="tech-1-11.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat14').play()"><span class="bg-height"></span><span class="btn-text">Write it</span></button>
+<audio id="bflat15" src="tech-2-22.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat15').play()"><span class="bg-height"></span><span class="btn-text">Cut it</span></button>
+<audio id="bflat16" src="tech-3-33.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat16').play()"><span class="bg-height"></span><span class="btn-text">Paste it</span></button>
+<audio id="bflat17" src="tech-4-44.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat17').play()"><span class="bg-height"></span><span class="btn-text">Save it</span></button>
+<audio id="bflat18" src="tech-5-55.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat18').play()"><span class="bg-height"></span><span class="btn-text">Load it</span></button>
+<audio id="bflat19" src="tech-6-66.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat19').play()"><span class="bg-height"></span><span class="btn-text">Check it</span></button>
+<audio id="bflat20" src="tech-7-77.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat20').play()"><span class="bg-height"></span><span class="btn-text">Quik - rewrite</span></button>
+<br><br>
+<audio id="bflat21" src="plug-it.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat21').play()"><span class="bg-height"></span><span class="btn-text">Plug it</span></button>
+<audio id="bflat22" src="play-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat22').play()"><span class="bg-height"></span><span class="btn-text">Play it</span></button>
+<audio id="bflat23" src="burn-it.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat23').play()"><span class="bg-height"></span><span class="btn-text">Burn it</span></button>
+<audio id="bflat24" src="rip-it.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat24').play()"><span class="bg-height"></span><span class="btn-text">Rip it</span></button>
+<audio id="bflat25" src="drag-it.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat25').play()"><span class="bg-height"></span><span class="btn-text">Drag it</span></button>
+<audio id="bflat26" src="drop-it.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat26').play()"><span class="bg-height"></span><span class="btn-text">Drop it</span></button>
+<audio id="bflat27" src="zip.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat27').play()"><span class="bg-height"></span><span class="btn-text">Zip - unzip it </span></button>
+<br><br>
+<audio id="bflat28" src="lock-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat28').play()"><span class="bg-height"></span><span class="btn-text">Lock it</span></button>
+<audio id="bflat29" src="fill-it.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat29').play()"><span class="bg-height"></span><span class="btn-text">Fill it</span></button>
+<audio id="bflat30" src="call-it.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat30').play()"><span class="bg-height"></span><span class="btn-text">Call it</span></button>
+<audio id="bflat31" src="find-it.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat31').play()"><span class="bg-height"></span><span class="btn-text">Find it</span></button>
+<audio id="bflat32" src="view-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat32').play()"><span class="bg-height"></span><span class="btn-text">View it</span></button>
+<audio id="bflat33" src="code-it.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat33').play()"><span class="bg-height"></span><span class="btn-text">Code it</span></button>
+<audio id="bflat34" src="jam.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat34').play()"><span class="bg-height"></span><span class="btn-text">Jam - unlock it</span></button>
+<br><br>
+<audio id="bflat35" src="surf-it.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat35').play()"><span class="bg-height"></span><span class="btn-text">Surf it</span></button>
+<audio id="bflat36" src="scroll-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat36').play()"><span class="bg-height"></span><span class="btn-text">Scroll it</span></button>
+<audio id="bflat37" src="pause-it.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat37').play()"><span class="bg-height"></span><span class="btn-text">Pause it</span></button>   
+<audio id="bflat38" src="click-it.mp3"></audio>
+<button class="inner-height-neon-pink" onclick="document.getElementById('bflat38').play()"><span class="bg-height"></span><span class="btn-text">Click it</span></button>
+<audio id="bflat39" src="cross-it.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat39').play()"><span class="bg-height"></span><span class="btn-text">Cross it</span></button>
+<audio id="bflat40" src="crack-it.mp3"></audio>
+<button class="inner-height-neon-blue" onclick="document.getElementById('bflat40').play()"><span class="bg-height"></span><span class="btn-text">Crack it</span></button>
+<audio id="bflat41" src="switch.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat41').play()"><span class="bg-height"></span><span class="btn-text">Switch -Update it</span></button>
+<br><br>
+<audio id="bflat42" src="name-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat42').play()"> <span class="bg-height"></span><span class="btn-text">Name it</span></button>
+<audio id="bflat43" src="read-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat43').play()"> <span class="bg-height"></span><span class="btn-text">Read it</span></button>
+<audio id="bflat44" src="tune-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat44').play()"> <span class="bg-height"></span><span class="btn-text">Tune it</span></button>
+<audio id="bflat45" src="print-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat45').play()"> <span class="bg-height"></span><span class="btn-text">Print it</span></button>
+<audio id="bflat46" src="scan-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat46').play()"> <span class="bg-height"></span><span class="btn-text">scan it</span></button>
+<audio id="bflat47" src="send-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat47').play()"> <span class="bg-height"></span><span class="btn-text">Send it</span></button>
+<audio id="bflat48" src="fax.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat48').play()"> <span class="bg-height"></span><span class="btn-text">Fax-rename it</span></button>
+<br><br>
+<audio id="bflat49" src="touch-it.mp3"></audio>
+<button class="inner-height-neon-purple" onclick="document.getElementById('bflat49').play()"><span class="bg-height"></span><span class="btn-text">Touch it</span></button>
+<audio id="bflat50" src="bring-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat50').play()"> <span class="bg-height"></span><span class="btn-text">Bring it</span></button>
+<audio id="bflat51" src="pay-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat51').play()"> <span class="bg-height"></span><span class="btn-text">Pay it</span></button>
+<audio id="bflat52" src="watch-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat52').play()"> <span class="bg-height"></span><span class="btn-text">Watch it</span></button>
+<audio id="bflat53" src="turn-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat53').play()"> <span class="bg-height"></span><span class="btn-text">Turn it</span></button>
+<audio id="bflat54" src="leave-it.mp3"></audio>
+<button class="inner-height-neon" onclick="document.getElementById('bflat54').play()"> <span class="bg-height"></span><span class="btn-text">Leave it</span></button>
+<audio id="bflat55" src="stop.mp3"></audio>
+<button class="inner-height-neon"  onclick="document.getElementById('bflat55').play()"> <span class="bg-height"></span> <span class="btn-text">Stop - Format it</span></button>
+<br><br>
+<audio id="bflat56" src="technologic.mp3"></audio>
+
+<div class="ct-btn">
+<button class="inner-height-neon" onclick="document.getElementById('bflat56').play()"> <span class="bg-height"></span><span class="btn-text">Technologic</span></button>
+</div>
+<br><br>
+
+<audio id="myAudio">
+    <source src="daft-punk-beat.mp3" type="audio/mp3">
+  </audio>
+  
+  
+<button class="inner-height-neon" onclick="playAudio()" type="button">
+    Play
+</button>
+  <button class="inner-height-neon" onclick="pauseAudio()" type="button">
+    Pause
+</button> 
+  
+  <script>
+  var x = document.getElementById("myAudio"); 
+  
+  function playAudio() { 
+    x.play(); 
+  } 
+  
+  function pauseAudio() { 
+    x.pause(); 
+  } 
+  </script>
+
+<!--<p style="color: white; font-size: 35px;"> &#x45; </p>
+<p style="color: white;"> &#x49 </p>-->
+
+
+
+
+
+<!--
+<div class="ct-btn">
+    <button class="inner-height-neon"><span class="bg-height"></span><span class="btn-text">Inner Height</span></button>
+</div>
+-->
+    
+
+<!--<a href="something" class="button4" style="background-color:#f14e4e">Buy it</a>
+    <a href="something" class="button4" style="background-color:#f1bb4e">use it</a>
+    <a href="something" class="button4" style="background-color:#84f14e">break it</a>
+    <a href="something" class="button4" style="background-color:#4ef18f">fix it</a>
+    <a href="something" class="button4" style="background-color:#4e9af1">trash it</a>
+    <a href="something" class="button4" style="background-color:#9a4ef1">change it</a>
+    <a href="something" class="button4" style="background-color:#f14ebd">upgrade it</a>
+-->
+
+</body>
+</html>
